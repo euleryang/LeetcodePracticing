@@ -37,10 +37,10 @@ class ListNode:
             self.next = None
 
         elif isinstance(x,list):
-            self.x = x[0]
+            self.val = x[0]
             self.next = None
             cur = self
-            for i in val[1:]:
+            for i in x[1:]:
                 cur.next = ListNode(i)
                 cur = cur.next
 
